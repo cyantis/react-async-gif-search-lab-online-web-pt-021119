@@ -1,9 +1,9 @@
 import React from 'react';
 
-const GifList = props => {
+const GifList = ({ imgList }) => {
   let list = [];
 
-  for(let i of props.imgList){
+  for(let i of imgList){
     list.push(<p><img src={ i.images.original.url } width="500px"/></p>)
   }
 
