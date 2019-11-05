@@ -17,7 +17,10 @@ export default class GifListContainer extends React.Component {
 
   render(){
     return(
-      <GifList imgList={ this.state.data } />
+      <div>
+        <GifList imgList={ this.state.data } />
+        <GifSearch fetchGifs={ this.getGifs }/>
+      </div>
     )
   }
 }
