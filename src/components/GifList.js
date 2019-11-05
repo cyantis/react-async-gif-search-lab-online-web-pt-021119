@@ -6,16 +6,16 @@ createList = () => {
   let list = [];
 
   for(let i of this.props.imgList){
-    list.push(<li><img src={ i.images.original.url } /></li>)
+    list.push(<p><img src={ i.images.original.url } width="500px"/></p>)
   }
   return list;
 }
 
   render(){
     return(
-      <ul>
+      <div>
         { this.createList() }
-      </ul>
+      </div>
     )
   }
 }
