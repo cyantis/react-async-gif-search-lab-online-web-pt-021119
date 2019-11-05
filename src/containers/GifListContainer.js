@@ -1,5 +1,6 @@
 import React from 'react';
-//import GifSearch from 'GifSearch';
+import GifList from '../components/GifList';
+import GifSearch from '../components/GifSearch'
 
 export default class GifListContainer extends React.Component {
 
@@ -16,7 +17,7 @@ export default class GifListContainer extends React.Component {
 
   render(){
     return(
-      ""
+      <GifList imgList={ this.state.data } />
     )
   }
 }
