@@ -1,21 +1,17 @@
 import React from 'react';
 
-export default class GifList extends React.Component {
-
-createList = () => {
+const GifList = props => {
   let list = [];
 
-  for(let i of this.props.imgList){
+  for(let i of props.imgList){
     list.push(<p><img src={ i.images.original.url } width="500px"/></p>)
   }
-  return list;
+
+  return(
+    <div>
+      { list }
+    </div>
+  )
 }
 
-  render(){
-    return(
-      <div>
-        { this.createList() }
-      </div>
-    )
-  }
-}
+export default GifList;
