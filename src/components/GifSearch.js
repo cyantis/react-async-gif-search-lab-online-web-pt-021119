@@ -13,6 +13,7 @@ export default class GifSearch extends React.Component {
  }
 
  handleSubmit = event => {
+   event.preventDefault();
    this.props.fetchGifs(this.state.search);
  }
 
